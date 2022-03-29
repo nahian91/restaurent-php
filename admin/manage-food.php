@@ -1,7 +1,7 @@
 <?php include 'partials/header.php';?>
         <div class="row">
             <div class="col-xl-12">
-                <h4 class="title">Dashboard</h4>
+                <h4 class="title">Manage Food</h4>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="single-box">
@@ -26,4 +26,4 @@
                 </div>
             </div>
         </div>
-<?php include 'partials/footer.php';?>
+        <?php include 'partials/footer.php';?>
