@@ -44,7 +44,12 @@ if(isset($_GET['id'])) {
 
                     if($count == 1) {
                         if($new_password == $confirm_password) {
-                            echo ' Ok';
+                            $sql2 = "UPDATE tb_admin SET password = '$new_password' WHERE id = $id";
+
+                            $res2 = mysqli_query($con, $sql2);
+                            if($res2 == true) {
+                                echo 'Added';
+                            }
                         } else {
                             echo 'Not Match';
                         }

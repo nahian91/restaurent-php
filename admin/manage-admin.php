@@ -20,6 +20,11 @@
                         unset($_SESSION['admin_update']);
                     }
 
+                    if(isset($_SESSION['admin_login'])) {
+                        echo $_SESSION['admin_login'];
+                        unset($_SESSION['admin_login']);
+                    }
+
                     $sql = 'SELECT * from tb_admin';
 
                     $res = mysqli_query($con, $sql) or die(mysqli_error());
